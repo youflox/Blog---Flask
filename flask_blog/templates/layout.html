@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/header.css">
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Flask Blog</title>
+    {%endif%}
+</head>
+<body>
+<div class = 'header'>
+    <a href={{url_for('home')}} class="home">home</a>
+    <a href={{url_for('about')}} class = 'about'>about</a>
+</div>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

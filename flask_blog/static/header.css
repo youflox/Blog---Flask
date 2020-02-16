@@ -1,0 +1,48 @@
+.header{
+width : 100%;
+height : 50px;
+background-color : teal;
+text-align:right;
+}
+
+.home{
+color : black;
+font-size : 25px;
+margin:10px;
+padding : 10px;
+position : relative;
+right:10%;
+}
+.about{
+color : black;
+font-size : 25px;
+margin:10px;
+padding : 10px;
+position : relative;
+right:10%;
+}
+
+
+.posts{
+text-align:center;
+
+}
+
+.posts h2{
+text-align:left;
+font-family: sans-serif;
+}
+.posts h5{
+font-family:Courier;
+font-size:20px;
+text-align:left;
+}
+.posts p{
+font-family:Geneva;
+font-size:20px;
+text-align : justify;
+ text-indent: 50px;
+
+
+
+}
